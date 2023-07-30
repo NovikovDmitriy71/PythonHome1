@@ -40,6 +40,6 @@ for i in range(n):
 print([list((i, kust[i])) for i in range(len(kust))])         # проверка просмотр визуально кусты - ягоды
 count = list()                                                # список для подсчета кол-ва ягод 
 for i in range(len(kust)): 
-       count.append(kust[i] + kust[i-1] + kust[i-11])         # добавление в список всех ягод с прилежащих кустов
+       count.append(kust[i] + kust[i-1] + kust[i-2])         # добавление в список всех ягод с прилежащих кустов
 print(f' Количество ягод на каждом из {n} кистов {kust}')     # ягоды
 print(f' максимальное количество ягод при проходе  {max(count)}') # max - максимальное число в списке элементов
