@@ -217,4 +217,6 @@
 # 2-й способ компактная запись 
 n=set(int(input()) for i in range(int(input('Введите количество элементов 1-го списка  '))))
 m=set(int(input()) for i in range(int(input('Введите количество элементов 2-го списка  '))))
+print(m)
+print(n)
 print(m & n) 
