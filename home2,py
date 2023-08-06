@@ -37,6 +37,7 @@
 #     a =int(input(f'Введите количество ягод на кусте {i+1} : ')) # ягод на кусте
 #     kust.append(a)                                            #  список кустов с кол-вом ягод
 
+<<<<<<< HEAD
 # print([list((i, kust[i])) for i in range(len(kust))])         # проверка просмотр визуально кусты - ягоды
 # count = list()                                                # список для подсчета кол-ва ягод 
 # for i in range(len(kust)): 
