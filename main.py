@@ -213,10 +213,40 @@
 #             l3[j],l3[j+1]=l3[j+1],l3[j]
 
 # print(l3)
-
+#________________________________________-
 # 2-й способ компактная запись 
-n=set(int(input()) for i in range(int(input('Введите количество элементов 1-го списка  '))))
-m=set(int(input()) for i in range(int(input('Введите количество элементов 2-го списка  '))))
-print(m)
-print(n)
-print(m & n) 
+# n=set(int(input()) for i in range(int(input('Введите количество элементов 1-го списка  '))))
+# m=set(int(input()) for i in range(int(input('Введите количество элементов 2-го списка  '))))
+# print(m)
+# print(n)
+# print(m & n) 
+# #____________________________________________-
+# рекурсия возведение в степень
+# def step_num(a ,b):
+#     if b==0:
+#          return 1
+#     return a * step_num(a, b-1)
+    
+# a=int(input('введите число '))
+# b=int(input('введите степень числа '))
+# # res=Power(a, b)
+# # print(res)
+# print(step_num(a, b))      
+
+#_______________________________________________-
+# Напишите рекурсивную функцию sum(a, b), 
+# возвращающую сумму двух целых неотрицательных чисел. 
+# Из всех арифметических операций допускаются только +1 и -1. 
+# Также нельзя использовать циклы.
+# Функция не должна ничего выводить, только возвращать значение.
+
+def sum(a,b):
+    if a==0:
+        return b
+    elif a>0:
+        return sum((a-1), (b+1))
+    else:
+        return sum((a+1), (b-1))
+a=int(input('Input 1 namber '))
+b=int(input('Input 2 number '))
+print(sum(a,b))
